@@ -187,7 +187,13 @@ export default function Contact({ t }: { t: any }) {
             />
           </div>
 
-          <ReCAPTCHA sitekey={RECAPTCHA_SITE_KEY} size="invisible" ref={recaptchaRef} />
+          <div className="relative h-0 overflow-hidden">
+            <ReCAPTCHA
+              sitekey={RECAPTCHA_SITE_KEY}
+              size="invisible"
+              ref={recaptchaRef}
+            />
+          </div>
 
           <Button
             type="submit"
