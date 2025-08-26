@@ -13,9 +13,9 @@ export const metadata: Metadata = {
   keywords:
     "architecte, designer 3D, rendus photoréalistes, modélisation 3D, SketchUp, Lumion, AutoCAD, Revit, architecture résidentielle, design intérieur",
   icons: {
-    icon: "/icon.png",            // favicon par défaut
-    shortcut: "/icon.png",        // fallback
-    apple: "/icon.png",  // pour iOS
+    icon: "/icons/icon.png",            // favicon par défaut
+    shortcut: "/icons/icon.png",        // fallback
+    apple: "/icons/icon.png",  // pour iOS
   },
   authors: [{ name: "Bini Amed" }],
   openGraph: {

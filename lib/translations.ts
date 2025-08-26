@@ -81,7 +81,7 @@ export const translations = {
     // Footer
     footerTagline: "Architecte & Designer 3D • Expert en Rendus Photoréalistes & Dessinateur Professionnel",
     allRightsReserved: "Tous droits réservés.",
-    
+
     // Skills Categories
     modeling3D: "Modélisation 3D",
     rendering: "Rendu",

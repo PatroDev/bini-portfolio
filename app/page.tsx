@@ -9,6 +9,7 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { MapPin, Mail, Phone, Globe, Award, Briefcase, GraduationCap, Eye, ExternalLink, ChevronRight, Star, Calendar, DollarSign, Clock, Languages, Palette as Palette2, Building, Lightbulb, Pencil, Brush, Layers3 } from 'lucide-react';
+import Footer from '@/components/Footer';
 // import Link from 'next/link';
 
 interface Project {
@@ -550,62 +551,8 @@ export default function Home() {
       <Contact t={t} />
 
       {/* Footer */}
-      <footer className="bg-slate-900 text-white py-12 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto text-center">
-          
-          {/* Photo + Nom */}
-          <div className="flex flex-col items-center mb-6">
-            <img
-              src="/BiniAmed.png" // bini2-removebg-preview2.png
-              alt="Bini Amed"
-              className="w-28 h-28 rounded-full object-cover shadow-lg ring-4 ring-orange-400 mb-4 hover:scale-105 transition-transform duration-300"
-            />
-            <div className="text-2xl font-bold gradient-text animate-bounce-in">
-              Bini Amed
-            </div>
-          </div>
 
-          {/* Tagline */}
-          <p className="text-slate-400 mb-6">
-            {t('footerTagline')}
-          </p>
-
-          {/* Location */}
-          <div className="flex justify-center items-center gap-2 text-slate-400">
-            <MapPin className="w-4 h-4" />
-            <span>{t('location')}</span>
-          </div>
-
-          {/* Copyright */}
-          <div className="mt-8 pt-8 border-t border-slate-800 text-slate-500">
-            © 2025 Bini Amed. {t('allRightsReserved')}
-            <p className="text-transparent">
-              made with love by{" "}
-              <a
-                href="https://github.com/PatroDev/bini-portfolio"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-transparent"
-              >
-                @patrodev-2025 For bini-portfolio
-              </a>
-              {/* Texte ci-dessous caché visible en devTools */}
-              <span
-                style={{
-                  position: "absolute",
-                  width: "1px",
-                  height: "1px",
-                  overflow: "hidden",
-                  clip: "rect(0 0 0 0)",
-                  whiteSpace: "nowrap",
-                }}
-              >
-                made with love by @patrodev-2025 For bini-portfolio
-              </span>
-            </p>
-          </div>
-        </div>
-      </footer>
+      <Footer t={t} /> 
     </div>
   );
 }
