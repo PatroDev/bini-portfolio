@@ -13,7 +13,7 @@ const SUPABASE_ANON_KEY =
 
 const supabase = createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
 
-const RECAPTCHA_SITE_KEY = "6Le3m6IrAAAAAHs75Vw77f695Fr-vHBF04I0ricR";
+const RECAPTCHA_SITE_KEY = "6Lc7FbMrAAAAAGapg-23lxiKnuOmaQDzxWQVh2Nu"; //6Le3m6IrAAAAAHs75Vw77f695Fr-vHBF04I0ricR  
 
 export default function Contact({ t }: { t: any }) {
   const [formData, setFormData] = useState({
