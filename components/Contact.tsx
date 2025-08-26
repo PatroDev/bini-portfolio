@@ -72,7 +72,7 @@ export default function Contact({ t }: { t: any }) {
               <Mail className="w-8 h-8 text-orange-600 mx-auto mb-4 animate-pulse-3d" />
               <h3 className="font-semibold mb-2">{t("email")}</h3>
               <p className="text-slate-600">
-                <a href="mailto:bini.ahmed@gmail.com">bini.ahmed@gmail.com</a>
+                <a href="mailto:biniamed62@gmail.com">biniamed62@gmail.com</a>
               </p>
             </CardContent>
           </Card>
@@ -187,14 +187,6 @@ export default function Contact({ t }: { t: any }) {
             />
           </div>
 
-          <div className="relative h-0 overflow-hidden">
-            <ReCAPTCHA
-              sitekey={RECAPTCHA_SITE_KEY}
-              size="invisible"
-              ref={recaptchaRef}
-            />
-          </div>
-
           <Button
             type="submit"
             size="lg"
@@ -217,6 +209,14 @@ export default function Contact({ t }: { t: any }) {
           </Button>
         </div>
       </div>
+
+      {/* ReCAPTCHA */}
+      <ReCAPTCHA
+        sitekey={RECAPTCHA_SITE_KEY}
+        size="invisible"
+        ref={recaptchaRef}
+      />
+
     </section>
   );
 }

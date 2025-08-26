@@ -208,7 +208,7 @@ export default function AdminPage() {
             <h1 className="text-2xl font-bold">Administration Portfolio</h1>
           </div>
           <Badge variant="secondary" className="bg-blue-100 text-blue-800">
-            Bini Ahmed
+            Bini Amed
           </Badge>
         </div>
       </header> 

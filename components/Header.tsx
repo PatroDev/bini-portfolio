@@ -79,8 +79,16 @@ export default function Header(): JSX.Element {
           {/* Logo */}
           <div>
             <Link href="/" aria-label="Go to homepage" className="flex items-center space-x-2">
+                {/* Photo + Nom */}
+                <div className="flex flex-col items-center">
+                    <img
+                    src="/BiniAmed.png" // bini2-removebg-preview2.png
+                    alt="Bini Amed"
+                    className="w-16 h-20 mt-12 rounded-full object-cover shadow-lg ring-4 ring-orange-400 mb-4 hover:scale-105 transition-transform duration-300"
+                    />
+                </div>
               <span className="text-2xl font-bold gradient-text text-shadow-glow">
-                Bini Ahmed
+                Bini Amed
               </span>
             </Link>
           </div>
@@ -107,13 +115,13 @@ export default function Header(): JSX.Element {
           {/* Actions (lang + darkmode + burger) */}
           <div className="flex items-center gap-3 md:hidden">
             <LanguageToggle />
-            <button
+            {/* <button
               onClick={toggleDarkMode}
               aria-label="Toggle dark mode"
               className="p-2 rounded-lg bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700"
             >
               {darkMode ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />}
-            </button>
+            </button> */}
             <button
               onClick={() => setMobileMenuOpen((prev) => !prev)}
               aria-label="Toggle menu"

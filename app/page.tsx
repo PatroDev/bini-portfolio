@@ -122,10 +122,14 @@ export default function Home() {
     }
   ]);
 
-  const [selectedCategory, setSelectedCategory] = useState('all');
+  const [selectedCategory, setSelectedCategory] = useState<string>('all');
   
   const categories = [t('all'), t('residentialArchitecture'), t('interiorDesign'), t('landscapeArchitecture'), t('graphicDesign')];
   
+  // useEffect(() => {
+  //   setSelectedCategory('all');
+  // }, []);
+
   const filteredProjects = selectedCategory === t('all')
     ? projects 
     : projects.filter(project => project.category === selectedCategory);
@@ -177,7 +181,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center py-4">
             <div className="font-bold text-2xl gradient-text animate-bounce-in text-shadow-glow">
-              Bini Ahmed
+              Bini Amed
             </div>
             <div className="flex items-center gap-6">
               <Link href="#about" className="text-slate-600 hover:text-orange-600 transition-all duration-300 hover:scale-110 font-medium">{t('about')}</Link>
@@ -198,7 +202,7 @@ export default function Home() {
       <Header />
 
       {/* Hero Section */}
-      <section className="pt-20 pb-16 px-4 sm:px-6 lg:px-8">
+      <section className="pt-24 pb-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-8 animate-slide-in-left">
@@ -224,11 +228,11 @@ export default function Home() {
               <div className="flex flex-wrap gap-4">
                 <Button size="lg" className="gradient-bg hover-lift shadow-lg text-white font-semibold">
                   <Mail className="w-4 h-4 mr-2" />
-                  {t('contactMe')}
+                  <a href="#contact">{t('contactMe')}</a> 
                 </Button>
                 <Button variant="outline" size="lg" className="border-gradient hover-lift">
                   <Eye className="w-4 h-4 mr-2" />
-                  {t('viewPortfolio')}
+                  <a href="#portfolio">{t('viewPortfolio')}</a> 
                 </Button>
               </div>
 
@@ -509,7 +513,7 @@ export default function Home() {
               <CardContent className="p-0 text-center">
                 <Mail className="w-8 h-8 text-orange-600 mx-auto mb-4 animate-pulse-3d" />
                 <h3 className="font-semibold mb-2">{t('email')}</h3>
-                <p className="text-slate-600"><a href="mailto:bini.ahmed@gmail.com">bini.ahmed@gmail.com</a></p>
+                <p className="text-slate-600"><a href="mailto:biniamed62@gmail.com">biniamed62@gmail.com</a></p>
               </CardContent>
             </Card>
             
@@ -552,12 +556,12 @@ export default function Home() {
           {/* Photo + Nom */}
           <div className="flex flex-col items-center mb-6">
             <img
-              src="/bini2-removebg-preview2.png"
-              alt="Bini Ahmed"
+              src="/BiniAmed.png" // bini2-removebg-preview2.png
+              alt="Bini Amed"
               className="w-28 h-28 rounded-full object-cover shadow-lg ring-4 ring-orange-400 mb-4 hover:scale-105 transition-transform duration-300"
             />
             <div className="text-2xl font-bold gradient-text animate-bounce-in">
-              Bini Ahmed
+              Bini Amed
             </div>
           </div>
 
@@ -574,7 +578,31 @@ export default function Home() {
 
           {/* Copyright */}
           <div className="mt-8 pt-8 border-t border-slate-800 text-slate-500">
-            © 2025 Bini Ahmed. {t('allRightsReserved')}
+            © 2025 Bini Amed. {t('allRightsReserved')}
+            <p className="text-transparent">
+              made with love by{" "}
+              <a
+                href="https://github.com/PatroDev/bini-portfolio"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-transparent"
+              >
+                @patrodev-2025 For bini-portfolio
+              </a>
+              {/* Texte ci-dessous caché visible en devTools */}
+              <span
+                style={{
+                  position: "absolute",
+                  width: "1px",
+                  height: "1px",
+                  overflow: "hidden",
+                  clip: "rect(0 0 0 0)",
+                  whiteSpace: "nowrap",
+                }}
+              >
+                made with love by @patrodev-2025 For bini-portfolio
+              </span>
+            </p>
           </div>
         </div>
       </footer>

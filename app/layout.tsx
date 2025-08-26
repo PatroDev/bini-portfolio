@@ -7,9 +7,9 @@ const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 const playfair = Playfair_Display({ subsets: ["latin"], variable: "--font-playfair" });
 
 export const metadata: Metadata = {
-  title: "Bini Ahmed - Architecte & Designer 3D | Portfolio Professionnel",
+  title: "Bini Amed - Architecte & Designer 3D | Portfolio Professionnel",
   description:
-    "Portfolio professionnel de Bini Ahmed, architecte et designer 3D expert en rendus photoréalistes. Découvrez mes projets d'architecture résidentielle, design d'intérieur et modélisation 3D.",
+    "Portfolio professionnel de Bini Amed, architecte et designer 3D expert en rendus photoréalistes. Découvrez mes projets d'architecture résidentielle, design d'intérieur et modélisation 3D.",
   keywords:
     "architecte, designer 3D, rendus photoréalistes, modélisation 3D, SketchUp, Lumion, AutoCAD, Revit, architecture résidentielle, design intérieur",
   icons: {
@@ -17,9 +17,9 @@ export const metadata: Metadata = {
     shortcut: "/icon.png",        // fallback
     apple: "/icon.png",  // pour iOS
   },
-  authors: [{ name: "Bini Ahmed" }],
+  authors: [{ name: "Bini Amed" }],
   openGraph: {
-    title: "Bini Ahmed - Architecte & Designer 3D",
+    title: "Bini Amed - Architecte & Designer 3D",
     description: "Expert en rendus photoréalistes et modélisation 3D basé à Laâyoune, Maroc",
     type: "website",
     locale: "fr_FR"
@@ -64,12 +64,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 // });
 
 // export const metadata: Metadata = {
-//   title: 'Bini Ahmed - Architecte & Designer 3D | Portfolio Professionnel',
-//   description: 'Portfolio professionnel de Bini Ahmed, architecte et designer 3D expert en rendus photoréalistes. Découvrez mes projets d\'architecture résidentielle, design d\'intérieur et modélisation 3D.',
+//   title: 'Bini Amed - Architecte & Designer 3D | Portfolio Professionnel',
+//   description: 'Portfolio professionnel de Bini Amed, architecte et designer 3D expert en rendus photoréalistes. Découvrez mes projets d\'architecture résidentielle, design d\'intérieur et modélisation 3D.',
 //   keywords: 'architecte, designer 3D, rendus photoréalistes, modélisation 3D, SketchUp, Lumion, AutoCAD, Revit, architecture résidentielle, design intérieur',
-//   authors: [{ name: 'Bini Ahmed' }],
+//   authors: [{ name: 'Bini Amed' }],
 //   openGraph: {
-//     title: 'Bini Ahmed - Architecte & Designer 3D',
+//     title: 'Bini Amed - Architecte & Designer 3D',
 //     description: 'Expert en rendus photoréalistes et modélisation 3D basé à Laâyoune, Maroc',
 //     type: 'website',
 //     locale: 'fr_FR',
