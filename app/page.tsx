@@ -82,45 +82,108 @@ export default function Home() {
 
   const [experiences, setExperiences] = useState<Experience[]>([
     {
-      id: '1',
-      title: language === 'fr' ? 'Designer Graphique & Illustrateur' : 'Graphic Designer & Illustrator',
-      company: 'Deal Design',
-      period: language === 'fr' ? 'Juin 2024 - Présent' : 'June 2024 - Present',
-      description: language === 'fr' ? 'Création d\'identités visuelles, logos, illustrations artistiques et supports de communication print et digital. Spécialisé en dessin technique et conceptuel.' : 'Creating visual identities, logos, artistic illustrations and print and digital communication materials. Specialized in technical and conceptual drawing.',
-      type: 'work'
+      id: "edu-1",
+      title:
+        language === "fr"
+          ? "Designer Graphique & Illustrateur"
+          : "Graphic Designer & Illustrator",
+      company: "École Supérieure de Technologie de Laâyoune (EST) (MAROC)",
+      period: language === "fr" ? "2024 - Présent" : "2024 - Present",
+      description:
+        language === "fr"
+          ? "En fin de formation DUT - Formation axée sur les études techniques, structures et outils de conception"
+          : "End of DUT program - Training focused on technical studies, structures, and design tools.",
+      type: "education",
+    },
+  
+    // NOUVELLE EXPÉRIENCE AJOUTÉE ICI
+    {
+      id: "work-1",
+      title: language === "fr" ? "Stagiaire" : "Intern",
+      company: "Bureau Technique (SAHARA SIM) — Maroc",
+      period: language === "fr" ? "Juil. 2025 – Déc. 2025" : "Jul 2025 – Dec 2025",
+      description:
+        language === "fr"
+          ? "Réalisation de plans techniques et dessins sur AutoCAD. Travaux de prédimensionnement d’éléments structurels. Initiation aux calculs et à la modélisation sur Robot Structural Analysis. Participation aux études et documents techniques."
+          : "Created technical plans and drawings in AutoCAD. Pre-dimensioning of structural elements. Introduced to calculations and modeling using Robot Structural Analysis. Contributed to technical studies and documentation.",
+      type: "work",
+    },
+  
+    {
+      id: "work-2",
+      title:
+        language === "fr"
+          ? "Designer Graphique & Illustrateur"
+          : "Graphic Designer & Illustrator",
+      company: "Deal Design",
+      period: language === "fr" ? "Juin 2024 - Présent" : "June 2024 - Present",
+      description:
+        language === "fr"
+          ? "Création d'identités visuelles, logos, illustrations artistiques et supports de communication print et digital. Spécialisé en dessin technique et conceptuel."
+          : "Creating visual identities, logos, artistic illustrations and print and digital communication materials. Specialized in technical and conceptual drawing.",
+      type: "work",
     },
     {
-      id: '2',
-      title: language === 'fr' ? 'Architecte Junior' : 'Junior Architect',
-      company: 'DJEMIAN GROUP',
-      period: language === 'fr' ? 'Juin 2024 - Octobre 2024' : 'June 2024 - October 2024',
-      description: language === 'fr' ? 'Collaboration sur divers projets architecturaux et de design. Réalisation de plans techniques, modélisation 3D et rendus photoréalistes.' : 'Collaboration on various architectural and design projects. Creation of technical plans, 3D modeling and photorealistic renderings.',
-      type: 'work'
+      id: "work-3",
+      title:
+        language === "fr"
+          ? "Stagiaire Architecte Junior"
+          : "Junior Architect Trainee",
+      company: "DJEMIAN GROUP (Côte d’Ivoire)",
+      period: language === "fr" ? "Juin 2024 - Octobre 2024" : "June 2024 - October 2024",
+      description:
+        language === "fr"
+          ? "Collaboration sur divers projets architecturaux et de design. Réalisation de plans techniques, modélisation 3D et rendus photoréalistes."
+          : "Collaboration on various architectural and design projects. Creation of technical plans, 3D modeling and photorealistic renderings.",
+      type: "work",
+    },
+  
+    {
+      id: "edu-2",
+      title: language === "fr" ? "ARCHITECTURE D’INTÉRIEUR" : "Interior Architecture",
+      company:
+        language === "fr"
+          ? "École Supérieure des Arts Plastiques, d’Architecture et du Design (ESAPAD) INSAAC (Côte d’Ivoire)"
+          : "École Supérieure des Arts Plastiques, d’Architecture et du Design (ESAPAD) INSAAC (Côte d’Ivoire)",
+      period: language === "fr" ? "2023 - 2024" : "2023 - 2024",
+      description:
+        language === "fr"
+          ? "Formation en conception spatiale, représentation graphique et design"
+          : "Training in spatial design, graphic representation, and design.",
+      type: "education",
     },
     {
-      id: '3',
-      title: 'Architecture',
-      company: language === 'fr' ? 'École Nationale d\'Architecture de Rabat' : 'National School of Architecture of Rabat',
-      period: language === 'fr' ? '2024-2027 (prévu)' : '2024-2027 (expected)',
-      description: language === 'fr' ? 'Formation approfondie en architecture, design urbain et construction durable. Focus sur les techniques de modélisation 3D avancées.' : 'In-depth training in architecture, urban design and sustainable construction. Focus on advanced 3D modeling techniques.',
-      type: 'education'
+      id: "edu-3",
+      title:
+        language === "fr"
+          ? "Baccalauréat H1 Arts plastique"
+          : "Baccalaureate H1 - Visual Arts",
+      company:
+        language === "fr"
+          ? "Lycée d’Enseignement Artistique (LEA), INSAAC (Côte d’Ivoire)"
+          : "Art High School (LEA), INSAAC (Côte d’Ivoire)",
+      period: "2020 - 2023",
+      description:
+        language === "fr"
+          ? "Formation complète en arts plastiques et techniques de dessin professionnel."
+          : "Comprehensive training in visual arts and professional drawing techniques.",
+      type: "education",
     },
+  
     {
-      id: '4',
-      title: language === 'fr' ? 'Bachelor of Arts - Design d\'Interaction' : 'Bachelor of Arts - Interaction Design',
-      company: language === 'fr' ? 'École Supérieur Art Plastique, d\'Architecture et du Design' : 'Superior School of Plastic Arts, Architecture and Design',
-      period: '2020-2023',
-      description: language === 'fr' ? 'Formation complète en design d\'interaction, UX/UI, arts plastiques et techniques de dessin professionnel.' : 'Complete training in interaction design, UX/UI, plastic arts and professional drawing techniques.',
-      type: 'education'
+      id: "work-4",
+      title:
+        language === "fr"
+          ? "Artiste Graphique, Illustrateur & Peintre"
+          : "Graphic Artist, Illustrator & Painter",
+      company: language === "fr" ? "Freelance" : "Freelance",
+      period: language === "fr" ? "2018 - Présent" : "2018 - Present",
+      description:
+        language === "fr"
+          ? "Création d'œuvres artistiques originales, exploration de différents styles, maîtrise de la couleur, lumière et texture. Dessin à la main et illustration numérique."
+          : "Creation of original artworks, exploration of different styles, mastery of color, light, and texture. Hand drawing and digital illustration.",
+      type: "work",
     },
-    {
-      id: '5',
-      title: language === 'fr' ? 'Artiste Graphique, Illustrateur & Peintre' : 'Graphic Artist, Illustrator & Painter',
-      company: language === 'fr' ? 'Freelance' : 'Freelance',
-      period: language === 'fr' ? '2018 - Présent' : '2018 - Present',
-      description: language === 'fr' ? 'Création d\'œuvres artistiques originales, exploration de différents styles, maîtrise de la couleur, lumière et texture. Dessin à la main et illustration numérique.' : 'Creation of original artworks, exploration of different styles, mastery of color, light and texture. Hand drawing and digital illustration.',
-      type: 'work'
-    }
   ]);
 
   const [selectedCategory, setSelectedCategory] = useState<string>('all');
@@ -368,40 +431,77 @@ export default function Home() {
       <section id="experience" className="py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold mb-4 gradient-text animate-bounce-in">{t('experienceTitle')}</h2>
-            <p className="text-xl text-slate-600">{t('experienceSubtitle')}</p>
+            <h2 className="text-4xl font-bold mb-4 gradient-text animate-bounce-in">
+              {t("experienceTitle")}
+            </h2>
+            <p className="text-xl text-slate-600">{t("experienceSubtitle")}</p>
           </div>
-
-          <div className="space-y-8">
-            {experiences.map((exp) => (
-              <Card key={exp.id} className="p-6 hover-lift card-3d border-gradient animate-fade-in-scale">
+      
+          {(() => {
+            const educations = experiences.filter((e) => e.type === "education");
+            const works = experiences.filter((e) => e.type === "work");
+      
+            const renderExperienceCard = (exp: Experience) => (
+              <Card
+                key={exp.id}
+                className="p-6 hover-lift card-3d border-gradient animate-fade-in-scale"
+              >
                 <CardContent className="p-0">
                   <div className="flex items-start gap-4">
                     <div className="w-12 h-12 bg-gradient-to-br from-orange-100 to-blue-100 rounded-full flex items-center justify-center flex-shrink-0 animate-pulse-3d">
-                      {exp.type === 'work' ? (
+                      {exp.type === "work" ? (
                         <Briefcase className="w-6 h-6 text-orange-600" />
-                      ) : exp.type === 'education' ? (
+                      ) : exp.type === "education" ? (
                         <GraduationCap className="w-6 h-6 text-orange-600" />
                       ) : (
                         <Award className="w-6 h-6 text-orange-600" />
                       )}
                     </div>
+      
                     <div className="flex-1">
                       <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-2">
                         <h3 className="text-xl font-bold">{exp.title}</h3>
-                        <Badge variant="outline" className="w-fit hover:bg-orange-50 transition-colors duration-300">
+                        <Badge
+                          variant="outline"
+                          className="w-fit hover:bg-orange-50 transition-colors duration-300"
+                        >
                           <Calendar className="w-3 h-3 mr-1" />
                           {exp.period}
                         </Badge>
                       </div>
-                      <div className="gradient-text font-medium mb-2">{exp.company}</div>
-                      <p className="text-slate-600 leading-relaxed">{exp.description}</p>
+      
+                      <div className="gradient-text font-medium mb-2">
+                        {exp.company}
+                      </div>
+                      <p className="text-slate-600 leading-relaxed">
+                        {exp.description}
+                      </p>
                     </div>
                   </div>
                 </CardContent>
               </Card>
-            ))}
-          </div>
+            );
+      
+            return (
+              <div className="space-y-12">
+                {/* FORMATIONS */}
+                <div>
+                  <h3 className="text-2xl font-bold mb-6">
+                    {language === "fr" ? "Formations" : "Education"}
+                  </h3>
+                  <div className="space-y-8">{educations.map(renderExperienceCard)}</div>
+                </div>
+      
+                {/* EXPÉRIENCES */}
+                <div>
+                  <h3 className="text-2xl font-bold mb-6">
+                    {language === "fr" ? "Expériences" : "Experience"}
+                  </h3>
+                  <div className="space-y-8">{works.map(renderExperienceCard)}</div>
+                </div>
+              </div>
+            );
+          })()}
         </div>
       </section>
 
